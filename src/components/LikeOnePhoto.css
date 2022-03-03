@@ -1,0 +1,18 @@
+.likebutton {
+  background-color: rgb(230, 9, 9);
+  color: rgb(253, 251, 251);
+  position: absolute;
+  top: 250px;
+  right: 1px;
+}
+
+#photoandlike {
+  /* padding-bottom: 30px; */
+  position: relative;
+}
+
+.btn1 {
+  position: absolute;
+  top: 265px;
+  right: 3px;
+}
