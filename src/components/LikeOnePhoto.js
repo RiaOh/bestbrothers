@@ -19,6 +19,7 @@ export const LikeButton = styled.button`
   font-size: 15px;
 `;
 
+// TODO: add catch to promise
 const handleLike = (id) => {
   if (!localStorage.getItem("accessToken")) {
     Swal.fire({
@@ -57,6 +58,7 @@ const handleUnLike = (id) => {
 };
 
 function LikeOnePhoto({ photo }) {
+  // TODO: api 응답에 포함된 좋아요 상태 연동
   const [isLike, setIsLike] = useState(false);
 
   const likeHandler = () => {

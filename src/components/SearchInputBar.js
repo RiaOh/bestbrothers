@@ -84,6 +84,7 @@ function SearchInputBar({
         />
         {keyword && <RemoveIcon onClick={handleClearKeyword} />}
       </InputContainer>
+      {/* TODO: button 또는 input 사용 */}
       <Link to={keyword === "" ? "/" : `/photos/${keyword}`}>
         <SearchIcon
           src={searchicon}

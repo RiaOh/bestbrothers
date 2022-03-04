@@ -49,6 +49,7 @@ function SearchPage({ Searchingkeyword }) {
       });
   }, [Searchingkeyword]);
 
+  // TODO: 페이지당 아이템 개수를 동적으로 설정
   return (
     <div>
       <PhotoContainer id="photocontainer">

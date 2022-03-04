@@ -20,6 +20,7 @@ function SearchBar({ handleKeyword, Searchingkeyword }) {
     if (text === "") {
       return;
     } else {
+      // TODO: 검색어 중복 체크
       const newKeyword = {
         id: Date.now(),
         text: text,
@@ -42,6 +43,8 @@ function SearchBar({ handleKeyword, Searchingkeyword }) {
   };
 
   const [isClicked, setIsClicked] = useState(false);
+
+  // TODO: form tag 사용
   return (
     <div>
       <div className="nav">
