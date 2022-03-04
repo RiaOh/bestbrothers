@@ -20,12 +20,17 @@ function SearchBar({ handleKeyword, Searchingkeyword }) {
     if (text === "") {
       return;
     } else {
-      // TODO: 검색어 중복 체크
       const newKeyword = {
         id: Date.now(),
         text: text,
       };
-      setKeywords([newKeyword, ...keywords]);
+      
+      // TODO: 검색어 중복 체크
+      if(keywords.indexOf(newKeyword) === -1) {
+        setKeywords([newKeyword, ...keywords]);
+      }else {
+        alert("중복된 검색어가 있습니다.");
+      }
     }
   };
 
