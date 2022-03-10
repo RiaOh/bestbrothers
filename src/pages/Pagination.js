@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Left from "../images/left.png";
 import Right from "../images/right.png";
 
+// TODO: position: relative; 를 사용하지 않고 컴포넌트 위치 지정
 const Page = styled.nav`
   display: flex;
   position: relative;
@@ -57,6 +58,7 @@ const Button = styled.button`
   }
 `;
 
+// TODO: different code quality
 function Pagination({ length, page, setPage }) {
   const pages = Math.ceil(length / 5);
 

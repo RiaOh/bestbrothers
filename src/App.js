@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import SearchBar from "./components/SearchBar";
 import UnsplashLogin from "./UnsplashLogin.js";
 
+// TODO: jsx 확장자 사용
 function App() {
   const [Searchingkeyword, setSearchingKeyword] = useState("");
 

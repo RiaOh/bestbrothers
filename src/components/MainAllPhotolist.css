@@ -1,3 +1,6 @@
+/* TODO: 그리드 영역 overflow 처리 */
+/* TODO: media query break-point 를 모바일/데스크탑 등의 기준에 맞게 변경 */
+/* TODO: unique 요소가 아닌 곳에 id 셀렉터 사용한 곳을 class 셀렉터로 변경 */
 @media screen and (max-width: 1000px) {
   #photocontainer {
     display: grid;

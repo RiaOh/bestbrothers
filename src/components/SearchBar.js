@@ -24,7 +24,13 @@ function SearchBar({ handleKeyword, Searchingkeyword }) {
         id: Date.now(),
         text: text,
       };
-      setKeywords([newKeyword, ...keywords]);
+      
+      // TODO: 검색어 중복 체크
+      if(keywords.indexOf(newKeyword) === -1) {
+        setKeywords([newKeyword, ...keywords]);
+      }else {
+        alert("중복된 검색어가 있습니다.");
+      }
     }
   };
 
@@ -42,6 +48,8 @@ function SearchBar({ handleKeyword, Searchingkeyword }) {
   };
 
   const [isClicked, setIsClicked] = useState(false);
+
+  // TODO: form tag 사용
   return (
     <div>
       <div className="nav">
